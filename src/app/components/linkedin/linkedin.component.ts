@@ -9,8 +9,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class LinkedinComponent implements OnInit {
 
   linkedInCredentials = {
-    clientId: '77v8lsonfjvsan',
-    redirectUrl: 'https://dev-c4yqwvgf.us.auth0.com/login/callback'
+    /*clientId: '77v8lsonfjvsan',
+    redirectUrl: 'https://dev-c4yqwvgf.us.auth0.com/login/callback'*/
+    clientId: '86vu9nihqqxe76',
+    redirectUrl: 'https://dev-5uchuarw.us.auth0.com/login/callback'
   };
   ngOnInit(): void {
   }
