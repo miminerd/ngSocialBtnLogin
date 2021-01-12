@@ -12,7 +12,6 @@ export class GoogleLoginComponent implements OnInit {
   public authInstance: gapi.auth2.GoogleAuth;
   public error: string;
   public user: gapi.auth2.GoogleUser;
-  gapi: any;
 
   async ngOnInit() {
     if (await this.checkIfUserAuthenticated()) {
