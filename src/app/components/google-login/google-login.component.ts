@@ -30,7 +30,7 @@ export class GoogleLoginComponent implements OnInit {
     // and that we can call gapi.init
     return pload.then(async () => {
       await gapi.auth2
-        .init({ client_id: '623552297946-fev0v0fubvglq5ka5j9q7ojg69onn4a8.apps.googleusercontent.com' })
+        .init({ client_id: '997007092677-7si65ru2k74be0ms4431k568f6sb655n.apps.googleusercontent.com' })
         .then(auth => {
           this.gapiSetup = true;
           this.authInstance = auth;
