@@ -17,7 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "angular-social-login-buttons": [
+        "dist/angular-social-login-buttons/angular-social-login-buttons",
+        "dist/angular-social-login-buttons"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

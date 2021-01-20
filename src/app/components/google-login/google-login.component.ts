@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialID } from '../../../assets/SocialID';
 
 @Component({
   selector: 'app-google-login',
@@ -12,8 +13,10 @@ export class GoogleLoginComponent implements OnInit {
   public authInstance: gapi.auth2.GoogleAuth;
   public error: string;
   public user: gapi.auth2.GoogleUser;
+  client = new SocialID();
 
   async ngOnInit() {
+    console.log('getting arra ', this.client.config[0].googleClientID);
     if (await this.checkIfUserAuthenticated()) {
       this.user = this.authInstance.currentUser.get();
     }
@@ -30,7 +33,7 @@ export class GoogleLoginComponent implements OnInit {
     // and that we can call gapi.init
     return pload.then(async () => {
       await gapi.auth2
-        .init({ client_id: '997007092677-7si65ru2k74be0ms4431k568f6sb655n.apps.googleusercontent.com' })
+        .init({ client_id: this.client.config[0].googleClientID })
         .then(auth => {
           this.gapiSetup = true;
           this.authInstance = auth;

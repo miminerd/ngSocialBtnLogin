@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "angular-social-login-buttons": {
+      "projectType": "library",
+      "root": "projects/angular-social-login-buttons",
+      "sourceRoot": "projects/angular-social-login-buttons/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-social-login-buttons/tsconfig.lib.json",
+            "project": "projects/angular-social-login-buttons/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-social-login-buttons/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-social-login-buttons/src/test.ts",
+            "tsConfig": "projects/angular-social-login-buttons/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-social-login-buttons/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-social-login-buttons/tsconfig.lib.json",
+              "projects/angular-social-login-buttons/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "socialLogin",

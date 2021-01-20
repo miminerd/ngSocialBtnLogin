@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { SocialID } from '../../../assets/SocialID';
 
 @Component({
   selector: 'app-linkedin',
@@ -7,11 +8,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./linkedin.component.scss']
 })
 export class LinkedinComponent implements OnInit {
-
+  client = new SocialID();
   linkedInCredentials = {
-    /*clientId: '77v8lsonfjvsan',
-    redirectUrl: 'https://dev-c4yqwvgf.us.auth0.com/login/callback'*/
-    clientId: '86vu9nihqqxe76',
+    clientId: this.client.config[0].LinkedinClientID,
     redirectUrl: 'https://dev-5uchuarw.us.auth0.com/login/callback'
   };
   ngOnInit(): void {

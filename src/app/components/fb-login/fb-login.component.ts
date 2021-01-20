@@ -19,11 +19,4 @@ export class FbLoginComponent implements OnInit {
       console.log('fac login ');
     });
   }
-
- checkLoginState() {
-  // tslint:disable-next-line:only-arrow-functions
-  FB.getLoginStatus(function(response) {
-    console.log(response);
-  });
-}
 }
