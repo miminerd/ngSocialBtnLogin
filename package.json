@@ -1,6 +1,8 @@
 {
-  "name": "social-login",
+  "name": "angular-social-login-buttons",
   "version": "0.0.0",
+  "author": "Juda Buchahda",
+  "description": "A simple package to display social login buttons using Angular.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,6 +10,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "repository": {
+    "type": "ng",
+    "url": "https://github.com/miminerd/ngSocialBtnLogin"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +30,8 @@
     "@types/gapi.auth2": "0.0.52",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1100.6",

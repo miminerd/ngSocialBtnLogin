@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { SocialID } from '../../../assets/SocialID';
 
+
 @Component({
   selector: 'app-linkedin',
   templateUrl: './linkedin.component.html',
@@ -9,8 +10,9 @@ import { SocialID } from '../../../assets/SocialID';
 })
 export class LinkedinComponent implements OnInit {
   client = new SocialID();
+
   linkedInCredentials = {
-    clientId: this.client.config[0].LinkedinClientID,
+    clientId: this.client.config[1].LinkedinClientID,
     redirectUrl: 'https://dev-5uchuarw.us.auth0.com/login/callback'
   };
   ngOnInit(): void {
