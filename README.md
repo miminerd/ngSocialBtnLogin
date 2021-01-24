@@ -4,8 +4,6 @@ simple npm package to display social login buttons using Angular.\
 Signin with Google, Linkedin, Facebook \
 [Demo](https://karma-runner.github.io)
 
-![Alt text](/img/log2?raw=true "Appdemo")
-
 ## Features
 
 The project contains 2 parts:
@@ -23,14 +21,14 @@ yarn add angular-social-login-buttons
 
 ## Import
 add in top of the body tag in index.html the facebook sdk and google sdk
-![Alt text](/img/log1?raw=true "-")
+![Alt text](/img/log1.png?raw=true "in body tag")
 
 in app.module.ts 
 
 import the AngularSocialLoginButtonsModule module and provide your clientId for the google \
 or linkedin 
 
-![Alt text](/img/log3?raw=true "-")
+![Alt text](/img/log3.jpg?raw=true "imports")
 ## Usage
 
 to use the facebook Signin button add in your html file \
