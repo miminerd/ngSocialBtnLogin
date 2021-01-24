@@ -1,0 +1,13 @@
+.title, .bottom{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 125px;
+}
+.bottom{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

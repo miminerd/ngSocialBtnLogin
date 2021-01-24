@@ -1,12 +1,16 @@
-# SocialLogin
+# Angular social login buttons
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+npm module built with angular to login with different social media platforms
+such as Google, Linkedin, Facebook \
+[Demo](https://karma-runner.github.io)
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Signin with google, linkedin or facebook.
+the project contains the npm module (in the projects folder)
+and a demo of the actual module library is regular angular project
 
-## Code scaffolding
+## Usage
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
