@@ -1,27 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { SocialID } from '../../../assets/SocialID';
+import { AngularSocialLoginButtonsService } from '../../angular-social-login-buttons.service';
 
-declare let gapi: any;
+declare var gapi: any;
+
+
 @Component({
-  selector: 'app-google-login',
+  selector: 'lib-google-login',
   templateUrl: './google-login.component.html',
-  styleUrls: ['./google-login.component.scss']
+  styleUrls: ['./google-login.component.css']
 })
 export class GoogleLoginComponent implements OnInit {
-
-  constructor() { }
+  data: any;
   public gapiSetup = false; // marks if the gapi library has been loaded
   public authInstance: gapi.auth2.GoogleAuth;
   public error: string;
   public user: gapi.auth2.GoogleUser;
-  client = new SocialID();
+
+  constructor(private configService: AngularSocialLoginButtonsService) { }
 
   async ngOnInit() {
-    console.log('getting arra ', this.client.config[0].googleClientID);
+    this.data = this.configService.getGoogleId();
+    console.log('okkk ', this.data);
+
+    console.log('getting arra ', this.data);
     if (await this.checkIfUserAuthenticated()) {
       this.user = this.authInstance.currentUser.get();
     }
   }
+
+
+
+
 
   async initGoogleAuth(): Promise<void> {
     //  Create a new Promise where the resolve function is the callback
@@ -34,7 +43,7 @@ export class GoogleLoginComponent implements OnInit {
     // and that we can call gapi.init
     return pload.then(async () => {
       await gapi.auth2
-        .init({ client_id: this.client.config[0].googleClientID })
+        .init({ client_id: this.data })
         .then(auth => {
           this.gapiSetup = true;
           this.authInstance = auth;

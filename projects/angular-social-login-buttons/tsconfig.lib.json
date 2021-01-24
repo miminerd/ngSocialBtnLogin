@@ -5,7 +5,7 @@
     "target": "es2015",
     "declaration": true,
     "inlineSources": true,
-    "types": [],
+    "types": ["gapi.auth2", "facebook-js-sdk"],
     "lib": [
       "dom",
       "es2018"

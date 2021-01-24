@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <p>
       angular-social-login-buttons works!
     </p>
+    <lib-fb-login></lib-fb-login>
   `,
   styles: []
 })
