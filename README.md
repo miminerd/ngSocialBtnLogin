@@ -1,31 +1,89 @@
 # Angular social login buttons
 
-npm module built with angular to login with different social media platforms
-such as Google, Linkedin, Facebook \
+npm simple package to display social login buttons using Angular.
+Signin with Google, Linkedin, Facebook \
 [Demo](https://karma-runner.github.io)
 
 ## Features
 
-Signin with google, linkedin or facebook.
-the project contains the npm module (in the projects folder)
-and a demo of the actual module library is regular angular project
+The project contains 2 parts:
+- in the projects folder: the actual npm package (where the library is developed)
+- the other is a regular angular project using the npm package, you can check it.
+
+
+## Install
+- npm \
+npm install --save angular-social-login-buttons \
+
+- yarn \
+yarn add angular-social-login-buttons
+
+
+## Import
+add in top of the body tag in index.html the facebook sdk and google sdk
+  <script async defer src="https://apis.google.com/js/api.js"></script>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'Your-facebook-client-ID',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v9.0'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+    };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   </script> \
+
+in app.module.ts \
+
+   import { AngularSocialLoginButtonsModule, AngularSocialLoginButtonsService } from 'angular-social-login-buttons';
+
+   // Configs
+   export function getAuthServiceConfigs() {
+     const config = new AngularSocialLoginButtonsService();
+     config.addGoogle('YOUR-GOOGLE-CLIENT-ID');
+     config.addLinkedin('YOUR-LINKEDIN-CLIENT-ID');
+     return config;
+   } \
+
+@NgModule({
+  declarations: [
+    AppComponent
+    ...
+  ],
+  imports: [
+    ....
+    AngularSocialLoginButtonsModule
+  ],
+  providers: [ {provide: AngularSocialLoginButtonsService,
+                useFactory: getAuthServiceConfigs}
+              ],
+  bootstrap: [AppComponent]
+})
+
 
 ## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+to use the facebook Signin button add in your html file \
+<lib-fb-login></lib-fb-login>
+to use the google Signin button add in your html file \
+<lib-google-login></lib-google-login>
+to use the linkedin  Signin button add in your html file \
+<lib-linkedin-login></lib-linkedin-login>
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Example
 
-## Running unit tests
+clone the project and run 'npm install' 
+run 'ng serve ' to run the demo at http://localhost:4200/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
