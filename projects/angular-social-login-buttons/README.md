@@ -1,24 +1,48 @@
-# AngularSocialLoginButtons
+# Angular social login buttons
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+simple npm package to display social login buttons using Angular.\
+Signin with Google, Linkedin, Facebook \
+[Demo](https://karma-runner.github.io)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name --project angular-social-login-buttons` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-social-login-buttons`.
-> Note: Don't forget to add `--project angular-social-login-buttons` or else it will be added to the default project in your `angular.json` file. 
+The project contains 2 parts:
+- in the projects folder: the actual npm package (where the library is developed)
+- the other is a regular angular project using the npm package, you can check it.
 
-## Build
 
-Run `ng build angular-social-login-buttons` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Install
+- npm \
+npm install --save angular-social-login-buttons \
 
-## Publishing
+- yarn \
+yarn add angular-social-login-buttons
 
-After building your library with `ng build angular-social-login-buttons`, go to the dist folder `cd dist/angular-social-login-buttons` and run `npm publish`.
 
-## Running unit tests
+## Import
+add in top of the body tag in index.html the facebook sdk and google sdk
+![Alt text](/img/log1.jpg?raw=true "sdk")
 
-Run `ng test angular-social-login-buttons` to execute the unit tests via [Karma](https://karma-runner.github.io).
+in app.module.ts 
 
-## Further help
+import the AngularSocialLoginButtonsModule module and provide your clientId for the google \
+or linkedin 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![Alt text](/img/log3.jpg?raw=true "imports")
+## Usage
+
+to use the facebook Signin button add in your html file \
+<lib-fb-login></lib-fb-login>
+to use the google Signin button add in your html file \
+<lib-google-login></lib-google-login>
+to use the linkedin  Signin button add in your html file \
+<lib-linkedin-login></lib-linkedin-login>
+
+
+## Example
+
+clone the project and run 'npm install' 
+run 'ng serve ' to run the demo at http://localhost:4200/
+
+I used client ids just for the example and testing please don't use them \
+in your own projects

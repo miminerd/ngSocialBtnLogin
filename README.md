@@ -46,4 +46,3 @@ run 'ng serve ' to run the demo at http://localhost:4200/
 
 I used client ids just for the example and testing please don't use them \
 in your own projects
-
