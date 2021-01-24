@@ -16,7 +16,6 @@ export class LinkedinLoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.data = this.configService.getLinkedinId();
-    console.log('in linkedin ', this.data);
     this.linkedInCredentials = {
       clientId: this.data,
       redirectUrl: 'https://dev-5uchuarw.us.auth0.com/login/callback'

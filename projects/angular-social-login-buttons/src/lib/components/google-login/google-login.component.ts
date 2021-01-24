@@ -20,9 +20,6 @@ export class GoogleLoginComponent implements OnInit {
 
   async ngOnInit() {
     this.data = this.configService.getGoogleId();
-    console.log('okkk ', this.data);
-
-    console.log('getting arra ', this.data);
     if (await this.checkIfUserAuthenticated()) {
       this.user = this.authInstance.currentUser.get();
     }

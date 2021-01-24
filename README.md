@@ -1,8 +1,10 @@
 # Angular social login buttons
 
-npm simple package to display social login buttons using Angular.
+simple npm package to display social login buttons using Angular.\
 Signin with Google, Linkedin, Facebook \
 [Demo](https://karma-runner.github.io)
+
+![Alt text](/img/log2?raw=true "Appdemo")
 
 ## Features
 
@@ -21,57 +23,14 @@ yarn add angular-social-login-buttons
 
 ## Import
 add in top of the body tag in index.html the facebook sdk and google sdk
-  <script async defer src="https://apis.google.com/js/api.js"></script>
-  <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : 'Your-facebook-client-ID',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v9.0'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-    };
+![Alt text](/img/log1?raw=true "-")
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-   </script> \
+in app.module.ts 
 
-in app.module.ts \
+import the AngularSocialLoginButtonsModule module and provide your clientId for the google \
+or linkedin 
 
-   import { AngularSocialLoginButtonsModule, AngularSocialLoginButtonsService } from 'angular-social-login-buttons';
-
-   // Configs
-   export function getAuthServiceConfigs() {
-     const config = new AngularSocialLoginButtonsService();
-     config.addGoogle('YOUR-GOOGLE-CLIENT-ID');
-     config.addLinkedin('YOUR-LINKEDIN-CLIENT-ID');
-     return config;
-   } \
-
-@NgModule({
-  declarations: [
-    AppComponent
-    ...
-  ],
-  imports: [
-    ....
-    AngularSocialLoginButtonsModule
-  ],
-  providers: [ {provide: AngularSocialLoginButtonsService,
-                useFactory: getAuthServiceConfigs}
-              ],
-  bootstrap: [AppComponent]
-})
-
-
+![Alt text](/img/log3?raw=true "-")
 ## Usage
 
 to use the facebook Signin button add in your html file \
@@ -86,4 +45,7 @@ to use the linkedin  Signin button add in your html file \
 
 clone the project and run 'npm install' 
 run 'ng serve ' to run the demo at http://localhost:4200/
+
+I used client ids just for the example and testing please don't use them \
+in your own projects
 

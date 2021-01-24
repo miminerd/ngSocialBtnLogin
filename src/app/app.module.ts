@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { GoogleLoginComponent } from './components/google-login/google-login.component';
 import { GithubComponent } from './components/github/github.component';
 import { LinkedinComponent } from './components/linkedin/linkedin.component';
-
 import { AngularSocialLoginButtonsModule, AngularSocialLoginButtonsService } from 'angular-social-login-buttons';
 
 // Configs
