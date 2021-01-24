@@ -21,7 +21,7 @@ yarn add angular-social-login-buttons
 
 ## Import
 add in top of the body tag in index.html the facebook sdk and google sdk
-![Alt text](/img/log1.png?raw=true "in body tag")
+![Alt text](/img/log1.png?raw=true "sdk")
 
 in app.module.ts 
 
