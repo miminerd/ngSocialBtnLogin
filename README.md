@@ -2,7 +2,7 @@
 
 simple npm package to display social login buttons using Angular.\
 Signin with Google, Linkedin, Facebook \
-[Demo](https://karma-runner.github.io)
+- 👉 [demo](https://angular-social-login-buttons.herokuapp.com/)
 
 ## Features
 
@@ -12,6 +12,8 @@ The project contains 2 parts:
 
 
 ## Install
+to install the npm package via \
+
 - npm \
 npm install --save angular-social-login-buttons \
 
@@ -40,9 +42,8 @@ to use the linkedin  Signin button add in your html file \
 
 
 ## Example
+ here is an the repo of the demo using the angular-social-login-buttons package [repo](https://github.com/miminerd/socialLoginExample) \
 
-clone the project and run 'npm install' 
-run 'ng serve ' to run the demo at http://localhost:4200/
+ ## Author👩🏻‍💻
 
-I used client ids just for the example and testing please don't use them \
-in your own projects
+[Juda Buchahda](https://juda-landing-cv.herokuapp.com)

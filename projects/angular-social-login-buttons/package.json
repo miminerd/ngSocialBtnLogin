@@ -1,9 +1,14 @@
 {
   "name": "angular-social-login-buttons",
-  "version": "0.0.3",
+  "version": "0.1.8",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
     "@angular/core": "^9.0.7",
     "tslib": "^1.10.0"
+  },
+  "dependencies": {
+    "@types/gapi": "0.0.39",
+    "@types/gapi.auth2": "0.0.52",
+    "@types/facebook-js-sdk": "^3.3.1"
   }
 }
