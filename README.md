@@ -12,10 +12,10 @@ The project contains 2 parts:
 
 
 ## Install
-to install the npm package via \
+to install the npm package via 
 
 - npm \
-npm install --save angular-social-login-buttons \
+npm install --save angular-social-login-buttons 
 
 - yarn \
 yarn add angular-social-login-buttons
@@ -33,16 +33,16 @@ or linkedin
 ![Alt text](/img/log3.jpg?raw=true "imports")
 ## Usage
 
-to use the facebook Signin button add in your html file \
-<lib-fb-login></lib-fb-login>
-to use the google Signin button add in your html file \
-<lib-google-login></lib-google-login>
+to use the facebook Signin button add in your html file
+ `<lib-fb-login></lib-fb-login>`
+to use the google Signin button add in your html file
+`<lib-google-login></lib-google-login>`
 to use the linkedin  Signin button add in your html file \
-<lib-linkedin-login></lib-linkedin-login>
+`<lib-linkedin-login></lib-linkedin-login>`
 
 
 ## Example
- here is an the repo of the demo using the angular-social-login-buttons package [repo](https://github.com/miminerd/socialLoginExample) \
+ here is an the repo of the demo using the angular-social-login-buttons package [repo](https://github.com/miminerd/socialLoginExample) 
 
  ## Author👩🏻‍💻
 
