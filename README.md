@@ -33,10 +33,10 @@ or linkedin
 ![Alt text](/img/log3.jpg?raw=true "imports")
 ## Usage
 
-to use the facebook Signin button add in your html file
- `<lib-fb-login></lib-fb-login>`
-to use the google Signin button add in your html file
-`<lib-google-login></lib-google-login>`
+to use the facebook Signin button add in your html file \
+ `<lib-fb-login></lib-fb-login>` \
+to use the google Signin button add in your html file \
+`<lib-google-login></lib-google-login>` \
 to use the linkedin  Signin button add in your html file \
 `<lib-linkedin-login></lib-linkedin-login>`
 
