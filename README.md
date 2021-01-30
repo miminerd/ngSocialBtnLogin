@@ -44,6 +44,8 @@ to use the linkedin  Signin button add in your html file \
 ## Example
  here is an the repo of the demo using the angular-social-login-buttons package [repo](https://github.com/miminerd/socialLoginExample) 
 
- ## Author👩🏻‍💻
+ ## Contribution
+I welcome issues and pull requests on [pr](https://github.com/miminerd/ngSocialBtnLogin)
 
+ ## Author👩🏻‍💻
 [Juda Buchahda](https://juda-landing-cv.herokuapp.com)

@@ -1,8 +1,9 @@
 {
   "name": "angular-social-login-buttons",
   "version": "0.0.0",
-  "author": "Juda Buchahda",
+  "author": "Juda Buchahda <jouda.bouchahda@gmail.com>",
   "description": "A simple package to display social login buttons using Angular.",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
