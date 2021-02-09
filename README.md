@@ -3,6 +3,7 @@
 simple npm package to display social login buttons using Angular.\
 Signin with Google, Linkedin, Facebook \
 - 👉 [demo](https://angular-social-login-buttons.herokuapp.com/)
+![Alt text](/img/ang.PNG?raw=true "demo")
 
 ## Features
 
